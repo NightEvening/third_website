@@ -65,6 +65,10 @@
                     padding: 0;
                 }
             }
+
+            @media (max-width: v.$media_md) {
+                display: none;
+            }
         }
 
         .wubzy {
@@ -85,6 +89,10 @@
                 
                 @extend %hover-black;
             }
+
+            @media (max-width: v.$media_md) {
+                display: none;
+            }
         }    
         
         .icon {
@@ -98,6 +106,10 @@
                     fill: v.$color_white;
                     @include m.smooth();
                     @extend %hover-black-icon;
+                }
+
+                @media (max-width: v.$media_md) {
+                    display: none;
                 }
             }
         }

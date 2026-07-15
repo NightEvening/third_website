@@ -172,6 +172,10 @@
             @include m.font(16px, 500, v.$color_white);
             writing-mode: vertical-rl;
 
+            @media (max-width: v.$media_sm) {
+                display: none;
+            }
+
             &::after {
                 content: "";
                 @include m.position(absolute, 1, -1, top, left, 100px, 8px);
@@ -181,11 +185,6 @@
                 background-color: v.$color_white;
             }
 
-            @media (max-width: v.$media_sm) {
-                &::after {
-                    width: 0;
-                }
-            }
         }
 
         @media (max-width: v.$media_lg) {
