@@ -31,6 +31,11 @@ li {
   color: #111344;
 }
 
+.hero__notify-btn:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
 .header .nav .icon .icon__link-icon:hover {
   cursor: pointer;
   fill: #111344;
@@ -140,6 +145,134 @@ li {
   height: 28px;
   fill: #fff;
   transition: all 0.3s ease-in-out;
+}
+
+.hero {
+  position: relative;
+  min-width: 1260px;
+  height: 830px;
+  margin: 0 auto;
+  padding: 140px 0 0 0;
+  background: url("../assets/img/cloud_alpha.png") center/contain no-repeat;
+}
+.hero__content {
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+}
+.hero__content .hero__title {
+  font-size: 110px;
+  font-weight: 700;
+  font-style: normal;
+  color: #000;
+  line-height: 1;
+}
+.hero__content .hero__action-btn {
+  width: 380px;
+  height: 80px;
+  background-color: #000;
+  font-size: 28px;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+  border-radius: 45px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  bottom: 15px;
+  right: -20px;
+}
+.hero__content .hero__action-btn:hover {
+  transform: scale(1.1);
+}
+.hero__content .hero__action-btn:focus {
+  outline: none;
+}
+.hero__content .hero__action-btn:focus-visible {
+  outline: 2px solid #fff;
+}
+.hero__notify {
+  position: relative;
+  margin: 170px auto 0;
+  width: 680px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  column-gap: 10px;
+  row-gap: 0;
+}
+.hero__notify-img {
+  position: absolute;
+  z-index: 1;
+  top: -75px;
+  left: -35px;
+}
+.hero__notify-content {
+  width: 450px;
+  height: 100%;
+  border-right: 1px solid #fff;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  column-gap: 0;
+  row-gap: 0;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+}
+.hero__notify-btn {
+  width: 115px;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+  transition: color 0.3s ease-in-out;
+}
+.hero__notify-btn:focus {
+  outline: none;
+}
+.hero__notify-btn:focus-visible {
+  outline: 2px solid #fff;
+  border-radius: 25px;
+}
+.hero__scroll {
+  position: absolute;
+  z-index: 1;
+  bottom: 200px;
+  left: 10px;
+}
+.hero__scroll-content {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+  writing-mode: vertical-rl;
+}
+.hero__scroll-content::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  left: 8px;
+  display: block;
+  width: 1px;
+  height: 75px;
+  background-color: #fff;
 }
 
 body {
