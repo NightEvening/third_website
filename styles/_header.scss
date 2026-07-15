@@ -59,7 +59,7 @@
             }
 
 
-            @media (max-width: v.$madia_lg) {
+            @media (max-width: v.$media_lg) {
                 .list {
                     @include m.d-flex(center, center, nowrap, row, min(100px, 5vw), 0);
                     padding: 0;

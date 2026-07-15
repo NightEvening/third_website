@@ -11,3 +11,27 @@
 @mixin smooth($all: all, $time: 0.3s, $type: ease-in-out) {
     transition: $all $time $type;
 }
+
+@mixin position($pos: relative, $ind: 1 ,$inset: -1, $t-or-b: top, $l-or-r: left, $val: 0, $val2: 0) {
+    position: $pos;
+    z-index: $ind;
+
+    @if $inset > -1 {
+        inset: $inset
+    }
+
+    @else {
+        #{$t-or-b}: $val;
+        #{$l-or-r}: $val2;
+    }
+}
+
+@mixin font($size: 16px, $weight: 400, $color: #fff, $style: normal) {
+    font: {
+        size: $size;
+        weight: $weight;
+        style: $style;
+    }
+
+    color: $color;
+}
