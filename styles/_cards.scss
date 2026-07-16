@@ -57,3 +57,67 @@
         }
     }
 }
+
+.img-card {
+    position: relative;
+    width: 325px;
+    height: 295px;
+    border-radius: 25px;
+    background-color: color.adjust(v.$color_white, $alpha: -0.85);
+    @include m.d-flex(space-between, center, nowrap, column, 0, 0);
+    @include m.smooth();
+    overflow: hidden;
+    flex-shrink: 0;
+
+    &__title {
+        @include m.font(23px, 400, v.$color_white);
+        @include m.d-flex(center, center, nowrap, column, 0, 0);
+        // flex-shrink: 0;
+        flex-grow: 1;
+    }
+
+    &__preview {
+        width: 100%;
+        height: 220px;
+    }
+
+    &__btn {
+        @include m.position(absolute, 1, -1, bottom, left, -20px, -30px);
+        width: 120px;
+        height: 90px;
+        border-radius: 20px;
+        border: none;
+        background-color: v.$color_white;
+        rotate: z 7deg;
+        @include m.smooth();
+
+        &-icon {
+            width: 36px;
+            height: 23px;
+            fill: v.$color_black;
+            rotate: -7deg;
+            translate: 15px -7px;
+            @include m.smooth();
+        }
+
+        &:hover {
+            cursor: pointer;
+            scale: 1.3;
+
+            .img-card__btn-icon {
+                rotate: -7deg;
+                translate: 17px -10px;
+            }
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        box-shadow: 2px 2px 20px 3px color.adjust(v.$color_black, $alpha: -.85);
+    }
+
+    // @media (max-width: v.$media_min) {
+    //     width: 180px;
+    // }
+}
