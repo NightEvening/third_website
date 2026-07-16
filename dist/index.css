@@ -25,6 +25,11 @@ figure {
   margin: 0;
 }
 
+hr {
+  margin: 0;
+  width: 100%;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -594,6 +599,225 @@ figure {
   .work-section .work__cards-wrapper .card--tasting,
   .work-section .work__cards-wrapper .card--integration {
     justify-self: center;
+  }
+}
+
+.about-section {
+  padding: 140px 0 0 0;
+}
+.about-section .about {
+  margin: 0 auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  column-gap: 0;
+  row-gap: 130px;
+}
+.about-section .about__quality {
+  width: 100%;
+  height: 400px;
+  padding: 0 0 0 15px;
+  background: url("../assets/img/desktop_alpha.webp") 90% 100%/contain no-repeat;
+}
+.about-section .about__quality-title {
+  font-size: 45px;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+.about-section .about__quality-desc {
+  margin: 10px 0 0 0;
+  max-width: 590px;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  .about-section .about__quality {
+    background: linear-gradient(180deg, rgb(103, 143, 242) 25%, rgba(237, 221, 83, 0) 85%), url("../assets/img/desktop_alpha.webp") 90% 45%/500px no-repeat;
+  }
+}
+@media (max-width: 768px) {
+  .about-section .about__quality-title {
+    font-size: 35px;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+  }
+  .about-section .about__quality-desc {
+    margin: 10px 0 0 0;
+    max-width: 500px;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+  }
+  .about-section .about__quality {
+    background: url("../assets/img/desktop_alpha.webp") 99% 100%/450px no-repeat;
+  }
+}
+@media (max-width: 576px) {
+  .about-section .about__quality-desc {
+    max-width: 320px;
+  }
+  .about-section .about__quality {
+    background: url("../assets/img/desktop_alpha.webp") 150px 100%/400px no-repeat;
+  }
+}
+.about-section .about__touch {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  padding: 0 15px 0 0;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  column-gap: 0;
+  row-gap: 20px;
+}
+.about-section .about__touch::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -400px;
+  background: url("../assets/img/phone_alpha.webp") 0 0/contain no-repeat;
+  rotate: z 15deg;
+}
+.about-section .about__touch-title {
+  font-size: 45px;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+.about-section .about__touch-desc {
+  text-align: right;
+  max-width: 480px;
+  line-height: 1.4;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  .about-section .about__touch::before {
+    position: absolute;
+    z-index: -1;
+    top: -35px;
+    left: -410px;
+  }
+}
+@media (max-width: 992px) {
+  .about-section .about__touch {
+    height: 450px;
+  }
+  .about-section .about__touch::before {
+    position: absolute;
+    z-index: -1;
+    top: -60px;
+    left: -425px;
+  }
+}
+@media (max-width: 768px) {
+  .about-section .about__touch {
+    height: 400px;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 20px;
+  }
+  .about-section .about__touch-title {
+    font-size: 35px;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+  }
+  .about-section .about__touch-desc {
+    max-width: 340px;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+  }
+  .about-section .about__touch::before {
+    position: absolute;
+    z-index: -1;
+    top: 40px;
+    left: -230px;
+    rotate: z 65deg;
+  }
+}
+@media (max-width: 768px) {
+  .about-section .about__touch::before {
+    position: absolute;
+    z-index: -1;
+    top: 40px;
+    left: -230px;
+    width: 450px;
+  }
+}
+.about-section .about__approach {
+  width: 100%;
+  height: 800px;
+  padding: 0 0 0 15px;
+  background: url("../assets/img/cactus_alpha.webp") 90% 100%/contain no-repeat;
+}
+.about-section .about__approach-title {
+  margin: 200px 0 0 0;
+  font-size: 45px;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+.about-section .about__approach-desc {
+  margin: 10px 0 0 0;
+  max-width: 730px;
+  font-size: 19px;
+  font-weight: 300;
+  font-style: normal;
+  color: #fff;
+}
+@media (max-width: 992px) {
+  .about-section .about__approach-desc {
+    max-width: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .about-section .about__approach-title {
+    margin: 100px 0 0 0;
+    font-size: 35px;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+  }
+  .about-section .about__approach-desc {
+    padding: 0 15px 0 0;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+  }
+  .about-section .about__approach {
+    background: url("../assets/img/cactus_alpha.webp") 90% 100%/320px no-repeat;
+  }
+}
+@media (max-width: 576px) {
+  .about-section .about__approach-title {
+    margin: 0;
+  }
+  .about-section .about__approach {
+    height: 550px;
+    background: url("../assets/img/cactus_alpha.webp") 90% 100%/220px no-repeat;
   }
 }
 
