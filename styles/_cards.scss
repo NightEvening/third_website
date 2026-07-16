@@ -117,7 +117,12 @@
         box-shadow: 2px 2px 20px 3px color.adjust(v.$color_black, $alpha: -.85);
     }
 
-    // @media (max-width: v.$media_min) {
-    //     width: 180px;
-    // }
+    @media (max-width: v.$media_sm) {
+        user-select: none;
+
+        &:hover {
+            transform: none;
+            box-shadow: none;
+        }
+    }
 }

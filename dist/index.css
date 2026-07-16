@@ -172,6 +172,15 @@ hr {
   transform: scale(1.1);
   box-shadow: 2px 2px 20px 3px rgba(0, 0, 0, 0.15);
 }
+@media (max-width: 576px) {
+  .img-card {
+    user-select: none;
+  }
+  .img-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
 
 .header .nav__title-link:hover, .header .nav__links .list__item-link:hover, .header .nav .wubzy__link:hover {
   cursor: pointer;
