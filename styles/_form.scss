@@ -78,6 +78,10 @@
         &:hover {
             transform: scale(1.1);
         }
+
+        @media (max-width: v.$media_sm) {
+            transform: scale(none);
+        }
     }
 
     @media (max-width: v.$media_md) {
