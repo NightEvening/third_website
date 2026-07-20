@@ -1200,8 +1200,8 @@ hr {
 .form__submit-btn:hover {
   transform: scale(1.1);
 }
-@media (max-width: 576px) {
-  .form__submit-btn {
+@media (max-width: 768px) {
+  .form__submit-btn:hover {
     transform: scale(1);
   }
 }
