@@ -1202,7 +1202,7 @@ hr {
 }
 @media (max-width: 576px) {
   .form__submit-btn {
-    transform: scale(none);
+    transform: scale(1);
   }
 }
 @media (max-width: 768px) {
