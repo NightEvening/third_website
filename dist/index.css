@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
@@ -353,6 +357,85 @@ hr {
 @media (max-width: 768px) {
   .header .nav .icon .icon__link {
     display: none;
+  }
+}
+
+.nav-section {
+  display: none;
+}
+.nav-section__burger-icon {
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  right: 25px;
+  width: 30px;
+  height: 30px;
+  stroke: #fff;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+}
+.nav-section__burger-icon:hover {
+  stroke: #111344;
+}
+.nav-section__checkbox {
+  display: none;
+}
+.nav-section__checkbox:checked + .nav {
+  translate: 0;
+}
+.nav-section .nav {
+  padding: 100px 70px 0;
+  position: fixed;
+  z-index: 999;
+  inset: 0;
+  transition: all 0.4s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(50px);
+  translate: 100% 0;
+}
+.nav-section .nav__list {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  column-gap: 0;
+  row-gap: 20px;
+}
+.nav-section .nav__item-link {
+  font-size: 50px;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+  transition: all 0.1s ease-in-out;
+}
+.nav-section .nav__item-link:hover {
+  font-size: 50px;
+  font-weight: 700;
+  font-style: normal;
+  color: #111344;
+}
+.nav-section .nav__close {
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  right: 20px;
+  stroke: #fff;
+  user-select: none;
+}
+.nav-section .nav__close-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.nav-section .nav__close-icon:hover {
+  stroke: #111344;
+}
+@media (max-width: 768px) {
+  .nav-section {
+    display: block;
   }
 }
 

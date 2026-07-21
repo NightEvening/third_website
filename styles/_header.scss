@@ -115,3 +115,74 @@
         }
     }
 }
+
+.nav-section {
+    display: none;
+
+    &__burger-icon {
+        @include m.position(absolute, 10, -1, top, right, 10px, 25px);
+        width: 30px;
+        height: 30px;
+        stroke: v.$color_white;
+        @include m.smooth;
+        cursor: pointer;
+        user-select: none;
+
+        &:hover {
+            stroke: v.$color_dark_blue;
+        }
+    }
+
+    &__checkbox {
+        display: none;
+
+        &:checked + .nav{
+            translate: 0;
+        }
+    }
+
+    .nav {
+        padding: 100px 70px 0;
+        @include m.position(fixed, 999, 0,);
+        @include m.smooth(all, .4s);
+        background-color: color.adjust(v.$color_white, $alpha: -0.85);
+        backdrop-filter: blur(50px);
+        translate: 100% 0;
+
+        &__list {
+            @include m.d-flex(start, start, nowrap, column, 0, 20px);
+        }
+
+        &__item {
+            &-link {
+                @include m.font(50px, 700, v.$color_white);
+                @include m.smooth(all, .1s);
+
+                &:hover {
+                    @include m.font(50px, 700, v.$color_dark_blue);
+                }
+            }
+        }
+
+        &__close {
+            @include m.position(absolute, 10, -1, top, right, 10px, 20px);
+            stroke: v.$color_white;
+            user-select: none;
+
+            &-icon{
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                @include m.smooth();
+
+                 &:hover {
+                    stroke: v.$color_dark_blue;
+                }
+            }
+        }
+    }
+
+    @media (max-width: v.$media_md) {
+        display: block;
+    }
+}
