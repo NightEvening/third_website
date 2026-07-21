@@ -144,7 +144,7 @@
     .nav {
         padding: 100px 70px 0;
         @include m.position(fixed, 999, 0,);
-        @include m.smooth(all, .4s);
+        @include m.smooth(all, .2s);
         background-color: color.adjust(v.$color_white, $alpha: -0.85);
         backdrop-filter: blur(50px);
         translate: 100% 0;
