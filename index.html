@@ -45,6 +45,47 @@
         </div>
     </header>
 
+    <div class="nav-section">
+        <label for="checkID" class="nav-section__burger">
+            <svg class="nav-section__burger-icon">
+                <use href="assets/sprites.svg#burger-icon"></use>
+            </svg>
+        </label>
+
+        <input type="checkbox" id="checkID" class="nav-section__checkbox">
+
+        <nav class="nav-section__menu nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#work" class="nav__item-link">How we work?</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#about" class="nav__item-link">About as</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#experiens" class="nav__item-link">Our experiens</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#testimonials" class="nav__item-link">Testimonials</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#form" class="nav__item-link">Form section</a>
+                </li>
+            </ul>
+
+            <label for="checkID" class="nav__close">
+                <svg class="nav__close-icon">
+                    <use href="assets/sprites.svg#close-icon"></use>
+                </svg>
+            </label>
+        </nav>
+
+    </div>
+
     <main class="main">
         <section class="hero-section">
             <div class="container">
@@ -69,7 +110,7 @@
             </div>
         </section>
 
-        <section class="work-section">
+        <section class="work-section" id="work">
             <div class="container">
                 <div class="work">
                     <h2 class="work__title">How we work</h2>
@@ -129,7 +170,7 @@
 
         <hr class="divider">
 
-        <section class="about-section">
+        <section class="about-section" id="about">
             <div class="container">
                 <div class="about">
                     <div class="about__quality">
@@ -153,7 +194,7 @@
             </div>
         </section>
 
-        <section class="exeperien-section">
+        <section class="exeperien-section" id="experiens">
             <div class="container">
                 <div class="exeperien">
                     <h2 class="exeperien__title">Our experience</h2>
@@ -196,7 +237,7 @@
             </div>
         </section>
 
-        <section class="testimonials-section">
+        <section class="testimonials-section" id="testimonials">
             <div class="container">
                 <div class="testimonials">
                     <h2 class="testimonials__title">Testimonials</h2>
@@ -237,7 +278,7 @@
             </div>
         </section>
 
-        <section class="form-section">
+        <section class="form-section" id="form">
             <div class="container">
                 <div class="form-section__wrapper">
                     <form action="mailto:superd_oootmuvdeneg@gamil.com" class="form">
