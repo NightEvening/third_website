@@ -411,7 +411,7 @@ hr {
   transition: all 0.1s ease-in-out;
 }
 .nav-section .nav__item-link:hover {
-  font-size: 50px;
+  font-size: 25px;
   font-weight: 700;
   font-style: normal;
   color: #111344;

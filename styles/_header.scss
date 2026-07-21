@@ -159,7 +159,7 @@
                 @include m.smooth(all, .1s);
 
                 &:hover {
-                    @include m.font(50px, 700, v.$color_dark_blue);
+                    @include m.font(25px, 700, v.$color_dark_blue);
                 }
             }
         }
