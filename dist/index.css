@@ -537,6 +537,17 @@ hr {
     color: #000;
   }
 }
+@media (max-width: 428px) {
+  .hero__content {
+    max-width: 300px;
+  }
+  .hero__content .hero__title {
+    font-size: 40px;
+    font-weight: 700;
+    font-style: normal;
+    color: #000;
+  }
+}
 .hero__notify {
   position: relative;
   margin: 170px auto 0;
