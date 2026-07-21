@@ -155,7 +155,7 @@
 
         &__item {
             &-link {
-                @include m.font(50px, 700, v.$color_white);
+                @include m.font(25px, 700, v.$color_white);
                 @include m.smooth(all, .1s);
 
                 &:hover {
